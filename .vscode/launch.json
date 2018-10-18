@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/hmmm.exe",
+            "args": ["|&", "tee", "${workspaceFolder}/bin/debug.log"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "preLaunchTask": "build",
+            "miDebuggerPath": "C:/Users/npreuss/Documents/cpp/win-builds/bin/gdb.exe",
+            "logging": {
+                "trace": true,
+                "traceResponse": true
+            },
+            "linux": {
+                "MIMode": "gdb"
+            },
+            "osx": {
+                "MIMode": "lldb"
+            },
+            "windows": {
+                "MIMode": "gdb"
+            }
+        }
+    ]
+}
